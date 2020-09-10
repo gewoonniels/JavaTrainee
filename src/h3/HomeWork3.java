@@ -1,6 +1,6 @@
 package h3;
 
-public class HomeWork {
+public class HomeWork3 {
 
     public void showDifference(){
         int i = 3;
@@ -21,6 +21,12 @@ public class HomeWork {
         int b2 = Integer.parseInt(secondByte, 2);
         int sum = b1 + b2;
         return Integer.toBinaryString(sum);
+    }
+
+    public void calculateBinarySimple(){
+        byte a = 0b1010;
+        byte b = 0b100;
+        System.out.println(a + b);
     }
 
     public void calculateTime(int currentTime, int leapedHours){
