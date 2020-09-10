@@ -22,12 +22,12 @@ public class Start {
 //
 //        System.out.println(client1.firstName);
 
-//        HomeWorkH4 h4 = new HomeWorkH4();
+        HomeWorkH4 h4 = new HomeWorkH4();
 //        h4.coldOrWarm(Season.SUMMER);
-//        h4.printHourGlass(9);
+        h4.printHourGlass(9);
 
-        Lab4 lab4 = new Lab4();
-        lab4.checkAccountNumber();
+//        Lab4 lab4 = new Lab4();
+//        lab4.checkAccountNumber();
 
 
 

@@ -24,9 +24,9 @@ public class HomeWorkH4 {
     }
 
     public void printHourGlass(int rows){
-//        if(rows % 2 != 0){
-//            throw new EvenNumberException;
-//        }
+        if(rows % 2 == 0){
+            throw new EvenNumberException();
+        }
         for (int a = 0; a < rows; a++){
             System.out.print("*");
         }
