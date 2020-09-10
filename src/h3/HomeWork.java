@@ -16,14 +16,24 @@ public class HomeWork {
         System.out.println(j);
     }
 
-    public byte calculateBinary(){
-        byte b1= 0b0111 + 0b100;
-        return b1;
+    public String calculateBinary(String firstByte, String secondByte){
+        int b1 = Integer.parseInt(firstByte, 2);
+        int b2 = Integer.parseInt(secondByte, 2);
+        int sum = b1 + b2;
+        return Integer.toBinaryString(sum);
     }
 
-    public int calculateTime(int currentTime, int leapedHours){
-        int total = currentTime + leapedHours % 24;
-        return total > 24 ? total - 24 : total;
+    public void calculateTime(int currentTime, int leapedHours){
+        int finalHour = currentTime + leapedHours % 24;
+        int parsedHour = finalHour > 24 ? finalHour - 24 : finalHour;
+        System.out.println("Het is " + parsedHour + " uur, er zijn " + leapedHours % 24 + " voorbij gegaan");
     }
 
+//    byte	8 bits	-128 to +127
+//    short	16 bits	-32,768 to +32,767
+//    int	32 bits	(about)-2 billion to +2 billion
+//    long	64 bits	(about)-10E18 to +10E18
+//    float	32 bits	Maximum Values of -3.4E+38 to +3.4E+38 and a smallest value of +1.40239846E-45 to 1.40239846E-45
+//    double	64 bits	-1.7E+308 to 1.7E+308
+//    char 0 to 65,536E
 }
