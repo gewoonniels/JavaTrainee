@@ -23,7 +23,7 @@ public class Lab4 {
         if(totaal % 11 == 0){
             System.out.println("This is a valid bankaccount");
         } else {
-            System.out.println("This is not a valid bankaccount");
+            throw new IllegalArgumentException();
         }
     }
 
