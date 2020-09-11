@@ -3,6 +3,7 @@ import h3.HomeWork3;
 import h4.HomeWorkH4;
 import h4.Lab4;
 import h4.Season;
+import h5.Lab5;
 
 import java.util.Scanner;
 
@@ -22,14 +23,16 @@ public class Start {
 //
 //        System.out.println(client1.firstName);
 
-        HomeWorkH4 h4 = new HomeWorkH4();
+//        HomeWorkH4 h4 = new HomeWorkH4();
 //        h4.coldOrWarm(Season.SUMMER);
-        h4.printHourGlass(9);
+//        h4.printHourGlass(9);
 
 //        Lab4 lab4 = new Lab4();
 //        lab4.checkAccountNumber();
 
-
-
+        Lab5 lab5 = new Lab5();
+//        System.out.println(lab5.greatest(3,7));
+        System.out.println(lab5.greatest(2,3,4,88,5,6));
+        System.out.println(lab5.factorial(7));
     }
 }

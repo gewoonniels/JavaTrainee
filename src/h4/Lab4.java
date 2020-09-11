@@ -12,22 +12,19 @@ public class Lab4 {
         System.out.println(accountNumber);
 
         int multiplieBy = accountNumber.length();
-        int totaal = 0;
+        int total = 0;
 
         for (int i = 0; i < accountNumber.length(); i++){
-            int getal = Integer.parseInt(accountNumber.substring(i,i +1));
-            totaal += (getal * multiplieBy);
+            int selectedNumber = Integer.parseInt(accountNumber.substring(i,i +1));
+            total += (selectedNumber * multiplieBy);
             multiplieBy--;
         }
 
-        if(totaal % 11 == 0){
+        if(total % 11 == 0){
             System.out.println("This is a valid bankaccount");
         } else {
             throw new IllegalArgumentException();
         }
     }
-
-
-
 
 }
