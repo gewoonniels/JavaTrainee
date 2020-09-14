@@ -36,12 +36,12 @@ public class Start {
 //        System.out.println(lab5.greatest(3,7));
 //        System.out.println(lab5.greatest(2,3,4,88,5,6));
 //        System.out.println(lab5.factorial(7));
-        HomeWorkH5 hw5 = new HomeWorkH5();
-        hw5.fibo(4,5,6);
+//        HomeWorkH5 hw5 = new HomeWorkH5();
+//        hw5.fibo(4,5,6);
 
-//        Lab6 lab6 = new Lab6();
+        Lab6 lab6 = new Lab6();
 //        lab6.calculateSum();
-//        lab6.print3By3Array();
+        lab6.print3By3Array();
 
     }
 }

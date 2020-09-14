@@ -1,8 +1,6 @@
 package h6;
 
-import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class Lab6 {
 
@@ -20,9 +18,13 @@ public class Lab6 {
     }
 
     public void print3By3Array(){
-        int[] array = new int[3];
-
-
+        Integer[] intArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        List<Integer> intList = Arrays.asList(intArray);
+        Collections.shuffle(intList);
+        intList.toArray(intArray);
+        System.out.println(intArray[0] + " " + intArray[1] + " " + intArray[2]);
+        System.out.println(intArray[3] + " " + intArray[4] + " " + intArray[5]);
+        System.out.println(intArray[6] + " " + intArray[7] + " " + intArray[8]);
     }
 
 }
