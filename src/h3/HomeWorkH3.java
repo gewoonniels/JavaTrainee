@@ -1,8 +1,8 @@
 package h3;
 
-public class HomeWork3 {
+public class HomeWorkH3 {
 
-    public void showDifference(){
+    public void showDifference() {
         int i = 3;
         System.out.println("For the difference between i++ and i++, we start with the int 3");
         System.out.println("When we use ++i the number will first get one higher:" + ++i);
@@ -10,29 +10,28 @@ public class HomeWork3 {
         System.out.println(" Next time we print it it will be higher " + i);
     }
 
-    public void calculateJ(){
+    public void calculateJ() {
         int i = 3;
         int j = i < 3 ? i++ + ++i : ++i >>> 1;
         System.out.println(j);
     }
 
-    public String calculateBinary(String firstByte, String secondByte){
+    public String calculateBinary(String firstByte, String secondByte) {
         int b1 = Integer.parseInt(firstByte, 2);
         int b2 = Integer.parseInt(secondByte, 2);
         int sum = b1 + b2;
         return Integer.toBinaryString(sum);
     }
 
-    public void calculateBinarySimple(){
+    public void calculateBinarySimple() {
         byte a = 0b1010;
         byte b = 0b100;
         System.out.println(a + b);
     }
 
-    public void calculateTime(int currentTime, int leapedHours){
-        int finalHour = currentTime + leapedHours % 24;
-        int parsedHour = finalHour > 24 ? finalHour - 24 : finalHour;
-        System.out.println("Het is " + parsedHour + " uur, er zijn " + leapedHours % 24 + " voorbij gegaan");
+    public void calculateTime(int currentTime, int leapedHours) {
+        int finalHour = (currentTime + leapedHours) % 24;
+        System.out.println("Het is " + finalHour + " uur, er zijn " + ((currentTime + leapedHours) / 24) + " voorbij gegaan");
     }
 
 //    byte	8 bits	-128 to +127

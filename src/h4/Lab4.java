@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Lab4 {
 
     public void checkAccountNumber(){
-        Scanner scanner = new Scanner(System.in);  // Create a Scanner object
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter accountnumber");
 
-        String accountNumber = scanner.nextLine();  // Read user input
+        String accountNumber = scanner.nextLine();
         System.out.println(accountNumber);
 
         int multiplieBy = accountNumber.length();
