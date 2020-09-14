@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class Lab5 {
 
     public int greatest(int a, int b){
-        return a > b ? a : b;
+//        a > b ? a : b;
+        return Math.max(a,b);
     }
 
     public String greatest(String a, String b){

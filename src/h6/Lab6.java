@@ -5,7 +5,7 @@ import java.util.*;
 public class Lab6 {
 
     public void calculateSum(){
-        Scanner scanner = new Scanner(System.in);  // Create a Scanner object
+        Scanner scanner = new Scanner(System.in);
         int[] numbers = new int[10];
 
         System.out.println("Enter numbers");
