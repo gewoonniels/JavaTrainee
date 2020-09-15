@@ -18,7 +18,8 @@ public class Start {
 
 //        HomeWorkH4 h4 = new HomeWorkH4();
 //        h4.coldOrWarm(Season.SUMMER);
-//        h4.printHourGlass(9);
+//        h4.printHourGlass(11);
+
 
 //        Lab4 lab4 = new Lab4();
 //        lab4.checkAccountNumber();
@@ -28,11 +29,14 @@ public class Start {
 //        System.out.println(lab5.greatest(2,3,4,88,5,6));
 //        System.out.println(lab5.factorial(7));
         HomeWorkH5 hw5 = new HomeWorkH5();
-        hw5.fibo(4,5);
+        System.out.println(hw5.fibo(6));  /* 1 1 2 3 5 8 */
+        hw5.fibo(4, 6); /*4 4 8 12 20 32.*/
+        System.out.println(hw5.fibo(4, 5, 6)); /*4 5 9 14 23*/
+        System.out.println(hw5.goldenRatio(47));
+        System.out.println(hw5.goldenRatioByFibo(10));
 
 //        Lab6 lab6 = new Lab6();
 //        lab6.calculateSum();
 //        lab6.print3By3Array();
-
     }
 }
